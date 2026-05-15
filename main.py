@@ -60,7 +60,7 @@ Sujal
     return llm.invoke(prompt).content
 
 def attach_resume_fn(msg):
-    path = "resume.pdf"
+    path = "Sujal.pdf"
     if os.path.exists(path):
         with open(path, "rb") as f:
             part = MIMEApplication(f.read(), _subtype="pdf")
